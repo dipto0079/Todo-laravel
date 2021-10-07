@@ -173,7 +173,6 @@
             <div class="col-lg-8 col-xl-9">
 
               @foreach($todo as $key)
-
                 <div class="single-blog-list-1-index-1 wow bounceInUp" data-wow-duration="1.8s">
                     <div class="content-top">
                         <span class="first-word space-style">travel</span>
@@ -193,9 +192,14 @@
                             <div class="post-meta">
                                 <div class="left-content">
                                     <div class="btn-wrapper">
-                                        <a href="#" class="reading-btn">continue reading</a>
+                                        <input type="text" name="comment">
+                                    </div>
+                                    <div class="btn-wrapper">
+                                        <button type="submit">Comment</button>
                                     </div>
                                 </div>
+
+
                                 <div class="right-content">
                                     <ul class="list">
                                         <li class="list-item">

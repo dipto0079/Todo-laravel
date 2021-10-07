@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoryTodoTable extends Migration
+class CreateTodoCommentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateCategoryTodoTable extends Migration
      */
     public function up()
     {
-        Schema::create('category_todo', function (Blueprint $table) {
-            $table->unsignedBigInteger('category_id');
+        Schema::create('todo_comment', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('todo_id');
+            $table->unsignedBigInteger('users_id');
+            $table->text('comment');
             $table->timestamps();
-
-            $table->unique(['todo_id','category_id']);
 
             $table->foreign("todo_id")
                 ->references("id")
@@ -26,9 +26,10 @@ class CreateCategoryTodoTable extends Migration
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
 
-            $table->foreign("category_id")
+
+            $table->foreign("users_id")
                 ->references("id")
-                ->on('categories')
+                ->on('users')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
         });
@@ -41,6 +42,6 @@ class CreateCategoryTodoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_todo');
+        Schema::dropIfExists('todo_comment');
     }
 }
