@@ -19,7 +19,9 @@ use App\Http\Controllers\TodoController;
 
 Route::get("/",HomeController::class)->name('home');
 Route::get("/single-post/{id}/{slug}",[HomeController::class,'singlePost'])->name('single-post');
+Route::get("/comment-reply/{id}/{slug}",[HomeController::class,'commentReply'])->name('comment-reply');
 Route::post("comment",[HomeController::class,'store'])->name('comment');
+Route::post("reply-comment",[HomeController::class,'replyComment'])->name('reply-comment');
 Route::group(['middleware'=>['auth']],function (){
     Route::resource("categories",CategoryController::class)->except('show');
     Route::get('/dashboard', [TodoController::class,"index"])->middleware(['auth'])->name('dashboard');

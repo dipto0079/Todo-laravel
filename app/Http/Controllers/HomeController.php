@@ -36,6 +36,23 @@ class HomeController extends Controller
             return  redirect()->back()->with('Error',__('You must be login'));
         }
         return back();
+    }
+
+    public function commentReply($id){
+
+        $data['comment']=TodoComment::where('id',$id)->first();
+
+        return view('Comment.reply',$data);
+    }
+
+    public function replyComment(Request  $request){
+        //dd($request->all());
+        $data = new TodoComment;
+        $data->comment_id=$request->comment_id;
+        $data->rep_id=$request->rep_id;
+        $data->comment_rep=$request->comment_rep;
+        $data->save();
+
 
 
     }

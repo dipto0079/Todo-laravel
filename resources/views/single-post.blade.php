@@ -27,13 +27,17 @@
     <link rel="stylesheet" href="{{asset('home/assets/css/main-style.css')}}">
     <!-- responsive Stylesheet -->
     <link rel="stylesheet" href="{{asset('home/assets/css/responsive.css')}}">
+    <style>
+        .display{
+            display:none;
+        }
+
+    </style>
 
 </head>
 
 <body>
-<!-- preloader start -->
 
-<!-- preloader end -->
 
 <!-- nav area start -->
 <nav class="navbar navbar-area navbar-expand-lg has-topbar nav-style-01 index-01">
@@ -185,6 +189,9 @@
                     @if(!empty($comment))
                         <ul class="comment-list">
                             @foreach($comment as $single_comment)
+                                <?php
+                                $slug =  \Illuminate\Support\Str::slug($single_comment->comment);
+                                ?>
                                 <li>
                                     <div class="single-comment-wrap">
                                         <div class="content">
@@ -200,9 +207,14 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="right">
-                                                    <a href="#" class="reply-btn"><i class="las la-reply"></i> Reply</a>
+                                                <div class="right" >
+                                                    <a  class="reply-btn{{$single_comment->id}}"><i class="las la-reply"></i> Reply</a>
                                                 </div>
+                                                <div id="main" class="display">
+                                                    <span class="font-medium mr-2">razzle_dazzle</span>
+                                                </div>
+
+
                                             </div>
                                             <p class="comment">{{$single_comment->comment}}</p>
                                         </div>
@@ -511,7 +523,31 @@
     <i class="fas fa-angle-up"></i>
 </div>
 <!-- back to top area end -->
+<script>
 
+    $('.reply-btn').each(function (index) {
+       // var id_name = '#total-revenue' + index;
+        //alert($(this).text())
+       // console.log('ok')
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+    let dd = document.getElementById("main");
+    document.addEventListener("click", function(){
+        dd.classList.toggle("display");
+    });
+</script>
 <!-- jquery -->
 <script src="{{asset('home/assets/js/jquery-3.6.0.min.js')}}"></script>
 <!-- jquery migrate -->

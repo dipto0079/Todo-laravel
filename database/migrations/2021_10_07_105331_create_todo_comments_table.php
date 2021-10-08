@@ -17,7 +17,10 @@ class CreateTodoCommentsTable extends Migration
             $table->id();
             $table->bigInteger('todo_id');
             $table->bigInteger('users_id');
+            $table->bigInteger('rep_id');
+            $table->bigInteger('comment_id');
             $table->text('comment');
+            $table->text('comment_rep');
             $table->timestamps();
         });
     }
