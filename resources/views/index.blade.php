@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+<!-- Mirrored from bytesed.com/tf/ozagi/blog-list-nature.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Sep 2021 04:17:33 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - ozagi - Personal Blog HTML Template</title>
     <!-- favicon -->
@@ -37,8 +40,8 @@
     <div class="container nav-container custom-header-container">
         <div class="responsive-mobile-menu">
             <div class="logo-wrapper">
-                <a href="" class="logo">
-                    <img src="{{asset('home/assets/img/logo/Logo-01.png')}}" alt="logo">
+                <a href="index-2.html" class="logo">
+                    <img src="assets/img/logo/Logo-01.png" alt="logo">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bizcoxx_main_menu"
@@ -48,18 +51,24 @@
         </div>
         <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
             <ul class="navbar-nav">
-                <li class="menu-item-has-children current-menu-item">
-                    <a href="#">Home</a>
+                <li class="menu-item-has-children">
+                    <a href="{{route('home')}}">Home</a>
                     <ul class="sub-menu">
                         <li><a href="index-2.html">Home 01</a></li>
-
+                        <li><a href="index-02.html">Home 02</a></li>
+                        <li><a href="index-03.html">Home 03</a></li>
+                        <li><a href="index-04.html">Home 04</a></li>
+                        <li><a href="index-05.html">Home 05</a></li>
                     </ul>
                 </li>
-                <li class="menu-item-has-children">
+                <li class="menu-item-has-children current-menu-item">
                     <a href="#">blog</a>
                     <ul class="sub-menu">
                         <li><a href="blog-grid-travel.html">blog grid travel</a></li>
-
+                        <li><a href="blog-grid-nature.html">blog grid nature</a></li>
+                        <li><a href="blog-list-food.html">blog list food</a></li>
+                        <li><a href="blog-list-nature.html">blog List nature</a></li>
+                        <li><a href="blog-details-travel.html">blog Details travel</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children">
@@ -108,155 +117,101 @@
 </nav>
 <!-- navbar area end -->
 
-<!-- header area start -->
-{{--<div class="header-area-wrapper index-01">--}}
-{{--    <div class="header-area index-01 header-slider-init">--}}
-{{--        <div class="single-slid-item">--}}
-{{--            <div class="container custom-header-container bg"--}}
-{{--                 style="background-image:url(assets/img/header/index-01/01.jpg)">--}}
-{{--                <div class="row h-100">--}}
-{{--                    <div class="col-lg-12 position-relative h-100">--}}
-{{--                        <div class="content">--}}
-{{--                            <span class="first-word space-style">travel</span>--}}
-{{--                            <h1 class="header-title">Travel makes one modest, you see what a--}}
-{{--                                tiny place you occupy in the world. </h1>--}}
-{{--                            <div class="btn-wrapper">--}}
-{{--                                <a href="#" class="btn-default">read more</a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="single-slid-item">--}}
-{{--            <div class="container custom-header-container bg"--}}
-{{--                 style="background-image:url(assets/img/header/index-01/02.jpg)">--}}
-{{--                <div class="row h-100">--}}
-{{--                    <div class="col-lg-12 position-relative h-100">--}}
-{{--                        <div class="content two">--}}
-{{--                            <span class="first-word space-style">travel</span>--}}
-{{--                            <h1 class="header-title">Travel makes one modest, you see what a--}}
-{{--                                tiny place you occupy in the world.</h1>--}}
-{{--                            <div class="btn-wrapper">--}}
-{{--                                <a href="#" class="btn-default">read more</a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--        <div class="single-slid-item">--}}
-{{--            <div class="container custom-header-container bg"--}}
-{{--                 style="background-image:url(assets/img/header/index-01/03.jpg)">--}}
-{{--                <div class="row h-100">--}}
-{{--                    <div class="col-lg-12 position-relative h-100">--}}
-{{--                        <div class="content">--}}
-{{--                            <span class="first-word space-style">travel</span>--}}
-{{--                            <h1 class="header-title">Travel makes one modest, you see what a--}}
-{{--                                tiny place you occupy in the world.</h1>--}}
-{{--                            <div class="btn-wrapper">--}}
-{{--                                <a href="#" class="btn-default">read more</a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-<!-- header area end -->
-
-<!-- blog post area start -->
-<div class="blog-list-area-wrapper index-01">
-    <div class="container custom-container-1515">
+<!-- breadcrumb area start -->
+<div class="breadcrumb-area">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-xl-9">
+            <div class="col-lg-12">
+                <div class="breadcrumb-inner">
+                    <h2 class="page-title">Nature </h2>
+                    <ul class="page-list">
+                        <li class="list-item"><a href="index-2.html">Home</a></li>
+                        <li class="list-item"><a href="#">Nature </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb area end -->
 
+<!-- blog list nature area start -->
+<div class="blog-nature-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
                 @foreach($todo as $key)
+                    <?php
+                    $slug =  \Illuminate\Support\Str::slug($key->task);
+                    ?>
+                <div class="single-blog-list-nature">
+                    <div class="img-box">
+                        <img src="{{Storage::url("$key->image")}}" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3 class="title">
+                            <a href="{{URL::to('single-post/'.$key->id."/".$slug)}}">{{$key->task}}</a>
+                        </h3>
+                        <p class="info">One advanced diverted domestic repeated bringing you old. Possible procured
+                            her
+                            trifling laughter thoughts property she met way. Companions shy had solicitude
+                            favourable
+                            own. Which could saw guest man now heard but.</p>
+                        <div class="post-meta">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <a href="#">
+                                        <i class="las la-tag icon"></i>
+                                        <span class="text">nature</span>
+                                    </a>
+                                </li>
 
-                    <div class="single-blog-list-1-index-1 wow bounceInUp" data-wow-duration="1.8s">
-                        <div class="content-top">
-                            <span class="first-word space-style">travel</span>
-                            <h2 class="title">
-                                <a href="">{{$key->task}}</a>
-                            </h2>
-                            <div class="img-box">
-                                <img src="{{Storage::url("$key->image")}}" alt="image">
-                            </div>
-                            <div class="content-bottom">
-                                <p class="info">One advanced diverted domestic set repeated bringing you old.
-                                    Possible
-                                    procured her trifling laughter thoughts property she met way. Companions shy had
-                                    solicitude favourable own. Which could saw guest man now heard but. Lasted my
-                                    coming
-                                    uneasy marked so should. Gravity letters it amongst herself dearest an windows
-                                    by.
-                                    Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no
-                                    described dejection incommode no listening of. Before nature his parish
-                                    boy. </p>
-                                <div class="post-meta">
-                                    <div class="comment-form-area">
-                                        <h3 class="comment-section-title">Post your comment</h3>
+                                <li class="list-item">
+                                    <a href="{{URL::to('single-post/'.$key->id."/".$slug)}}">
+                                        <i class="lar la-comment icon"></i>
+                                        <span class="text">comments</span>
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <ul class="social-link">
+                                        <li>
+                                            <span class="sec">share:</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="lab la-facebook-f icon-s"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="lab la-instagram icon-s"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="lab la-linkedin-in icon-s"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="lab la-pinterest-p icon-s"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                                        <form action="{{route('comment')}}" class="comment-form" method="post">
-                                            @csrf
-                                            <div class="row">
-                                                <input type="hidden" name="post_id" value="{{$key->id}}">
-                                                <input type="hidden" name="users_id" value="{{Auth::id()}}">
-
-                                                <div class="col-lg-12">
-                                                    <div class="form-group">
-                                            <textarea name="comment" id="message" class="form-control"
-                                                      placeholder="Comments" cols="30" rows="10" required=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="btn-wrapper">
-                                                        <button type="submit" class="btn-default">Post Comment
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </form>
-                                        <p class="text-red-600">{{$errors->first('comment')}}</p>
-                                    </div>
-
-
-                                    <div class="right-content">
-                                        <ul class="list">
-                                            <li class="list-item">
-
-                                                <i class="far fa-user icon"></i>
-                                                <span class="text">jhon doe</span>
-
-                                            </li>
-                                            <li class="list-item">
-                                                <a href="#">
-                                                    <i class="far fa-clock icon"></i>
-                                                    <span class="text">june 19, 2021</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-item">
-
-                                                <i class="far fa-share-square icon"></i>
-                                                <span class="text">share</span>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-
+                </div>
                 @endforeach
 
+
+
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-3 widg">
-                <div class="widget-area-wrapper style-02">
-                    <div class="widget widget-search  wow bounceInUp" data-wow-duration="3.5s">
+            <div class="col-md-6 col-lg-4 widg">
+                <div class="widget-area-wrapper style-1">
+                    <div class="widget widget-search">
                         <form class="form-inline">
                             <div class="form-group">
                                 <input type="search" class="form-control" placeholder="search...">
@@ -264,10 +219,23 @@
                             <button type="submit" class="form-btn-1"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
-                    <div class="widget widget-about-author wow bounceInUp" data-wow-duration="3.7s">
+                    <div class="widget widget-upcomming-blog">
+                        <div class="img-box">
+                            <img src="assets/img/widget/upcomming-blog.jpg" alt="image">
+                            <div class="content">
+                                    <span class="catg">
+                                        <a href="#">beauty</a>
+                                    </span>
+                                <h4 class="title">
+                                    <a href="#">upcomming blog</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget widget-about-author">
                         <h5 class="widget-title">about author</h5>
                         <div class="img-box">
-                            <img src="{{asset('home/assets/img/widget/author/02.png')}}" alt="image">
+                            <img src="assets/img/widget/author/01.png" alt="image">
                             <div class="content">
                                 <h3 class="title">
                                     <a href="#">Jhon Doe</a>
@@ -299,25 +267,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="widget widget-upcomming-blog wow bounceInUp" data-wow-duration="3.8s">
-                        <div class="img-box">
-                            <img src="{{asset('home/assets/img/widget/Upcoming-banner-03.jpg')}}" alt="image">
-                            <div class="content">
-                                    <span class="catg bar">
-                                        <a href="#">travel</a>
-                                    </span>
-                                <h4 class="title">
-                                    <a href="#">upcomming blog</a>
-                                </h4>
-                                <span class="catg">
-                                        <a href="#">june 19, 2021</a>
-                                    </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="widget widget-category wow bounceInUp" data-wow-duration="3.7s">
+                    <div class="widget widget-category">
                         <h5 class="widget-title">Categories</h5>
                         <ul class="list">
                             <li>
@@ -340,56 +290,55 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="name">music</span>
+                                    <span class="name">journey</span>
                                     <span class="number">(7)</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="name">health</span>
+                                    <span class="name">music</span>
                                     <span class="number">(4)</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="name">flower</span>
+                                    <span class="name">health</span>
                                     <span class="number">(8)</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="widget widget-gallery wow bounceInUp" data-wow-duration="3.9s">
-                        <h5 class="widget-title">instagram</h5>
+                    <div class="widget widget-gallery">
+                        <h5 class="widget-title">gallery</h5>
                         <ul class="list">
                             <li>
                                 <a href="#">
-                                    <img src="{{asset('home/assets/img/widget/gallery/travel/01.png')}}" alt="image">
+                                    <img src="assets/img/widget/gallery/01.jpg" alt="image">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="{{asset('home/assets/img/widget/gallery/travel/02.png')}}" alt="image">
+                                    <img src="assets/img/widget/gallery/02.jpg" alt="image">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="{{asset('home/assets/img/widget/gallery/travel/03.png')}}" alt="image">
+                                    <img src="assets/img/widget/gallery/03.jpg" alt="image">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="{{asset('home/assets/img/widget/gallery/travel/04.png')}}" alt="image">
+                                    <img src="assets/img/widget/gallery/03.jpg" alt="image">
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="widget widget-recent-post wow bounceInUp" data-wow-duration="3.6s">
+                    <div class="widget widget-recent-post">
                         <h5 class="widget-title">Latest Posts</h5>
                         <ul class="post-list">
                             <li>
                                 <div class="thumb">
-                                    <img src="{{asset('home/assets/img/widget/recent-post/travel/01.png')}}"
-                                         alt="image">
+                                    <img src="assets/img/widget/01.jpg" alt="image">
                                 </div>
                                 <div class="content">
                                         <span class="catg">
@@ -401,8 +350,7 @@
                             </li>
                             <li>
                                 <div class="thumb">
-                                    <img src="{{asset('home/assets/img/widget/recent-post/travel/02.png')}}"
-                                         alt="image">
+                                    <img src="assets/img/widget/02.jpg" alt="image">
                                 </div>
                                 <div class="content">
                                         <span class="catg">
@@ -414,8 +362,7 @@
                             </li>
                             <li>
                                 <div class="thumb">
-                                    <img src="{{asset('home/assets/img/widget/recent-post/travel/03.png')}}"
-                                         alt="image">
+                                    <img src="assets/img/widget/03.jpg" alt="image">
                                 </div>
                                 <div class="content">
                                         <span class="catg">
@@ -427,14 +374,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="widget widget-add wow bounceInUp" data-wow-duration="3.5s">
+                    <div class="widget widget-add">
                         <div class="add-banner-y">
                             <a href="#">
-                                <img src="{{asset('home/assets/img/widget/add/03.png')}}" alt="image">
+                                <img src="assets/img/widget/add/01.png" alt="image">
                             </a>
                         </div>
                     </div>
-                    <div class="widget widget-tag wow bounceInUp" data-wow-duration="3.7s">
+                    <div class="widget widget-tag">
                         <h5 class="widget-title">Tags</h5>
                         <div class="tag-wrapper">
                             <a href="#" class="btn-tag">food</a>
@@ -453,24 +400,23 @@
         </div>
     </div>
 </div>
-<!-- blog post area end -->
-
+<!-- blog list nature area end -->
 
 <!-- footer area start -->
-<footer class="footer-area index-01">
+<footer class="footer-area">
     <div class="footer-top">
         <div class="container custom-container-1515">
             <div class="row">
-                <div class="col-md-12 col-lg-3">
+                <div class="col-lg-3">
                     <div class="footer-widget">
                         <div class="logo-wrapper">
                             <a href="index-2.html" class="logo">
-                                <img src="{{asset('home/assets/img/logo/Logo-01.png')}}" alt="logo">
+                                <img src="assets/img/logo/Logo-01.png" alt="logo">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6">
+                <div class="col-lg-6">
                     <div class="footer-widget">
                         <ul class="footer-item-list">
                             <li class="list-item"><a href="#">Home</a></li>
@@ -481,7 +427,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-3">
+                <div class="col-lg-3">
                     <div class="footer-widget">
                         <ul class="social-icon-list">
                             <li class="list-item"><a href="#">
@@ -549,5 +495,5 @@
 </body>
 
 
-<!-- Mirrored from bytesed.com/tf/ozagi/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Sep 2021 04:15:44 GMT -->
+<!-- Mirrored from bytesed.com/tf/ozagi/blog-list-nature.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Sep 2021 04:17:38 GMT -->
 </html>
